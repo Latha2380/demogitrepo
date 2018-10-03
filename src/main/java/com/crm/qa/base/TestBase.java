@@ -52,6 +52,8 @@ public	static WebDriver driver;
     driver.manage().timeouts().implicitlyWait(Testutil.IMPLICIT_WAIT, TimeUnit.SECONDS);
     
     driver.get(prop.getProperty("url"));
+    
+    driver.close();
 	}
 	
 	
